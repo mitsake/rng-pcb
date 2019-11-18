@@ -40,7 +40,7 @@
 
 There are four boards in the design: the bottom board, which will have all the components soldered to it; two 'spacers', which do exactly what their name suggests; and the top board, which acts as a screen bezel and breaks out the two capacitive touch pads. Use a set of side cutters to cut the mouse bites connecting the boards, and clean them up with a file or some sandpaper.
 
-![Four small printed circuit boards](separated.jpg)
+![Four small printed circuit boards](images/separated.jpg)
 
 ## Populate the bottom board
 
@@ -59,13 +59,13 @@ There are lots of guides out there for SMD soldering, but some things to look ou
 
 Hopefully once you're done, you'll have something that looks like this:
 
-![Printed circuit board with surface-mount components soldered to it](bottom.jpg)
+![Printed circuit board with surface-mount components soldered to it](images/bottom.jpg)
 
 ## Flash the UF2 bootloader
 
 The microcontroller used in this project is the same as the one used on Adafruit's [Trinket M0][trinket], so installing the [UF2 bootloader][bootloader] for that board is the easiest way to get things running. While the right way to do this would be pogo pins, tack soldering is just as effective:
 
-![Picture of J-Link connected to a PCB with wires soldered to SWC and SWD pads](flashing.jpg)
+![Picture of J-Link connected to a PCB with wires soldered to SWC and SWD pads](images/flashing.jpg)
 
 [trinket]: https://www.adafruit.com/product/3500
 [bootloader]: https://github.com/adafruit/uf2-samdx1
@@ -95,7 +95,7 @@ oled.show()
 
 Insert the screen into the connector, hold it on an angle to ensure there's an electrical connection, and run the code. Hopefully the screen will greet you.
 
-![PCB with screen displaying 'Hello world!'](screen.jpg)
+![PCB with screen displaying 'Hello world!'](images/screen.jpg)
 
 ## Finish the assembly
 

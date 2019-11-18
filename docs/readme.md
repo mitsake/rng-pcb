@@ -6,7 +6,7 @@ This is my contribution to the Boldport Club's community run Board Swap Project,
 
 A ST662 charge pump produces the 12 V required to reverse-bias Q1, which produces the actual randomness. When electrons travel through this junction, Q2 allows current to flow to ground. This signal is amplified by Q3, run through a voltage divider, and fed into the ADC of an ATSAMD21E18 microcontroller, which has been flashed with the [Adafruit Trinket M0][trinket] bootloader to allow programming with CircuitPython.
 
-![Electronic schematic showing three transistors connected in a way that produces random noise](docs/Q1-3.png)
+![Electronic schematic showing three transistors connected in a way that produces random noise](images/q1-3.png)
 
 [trinket]: https://www.adafruit.com/product/3500
 
@@ -18,7 +18,7 @@ You can use the KiCad files in the 'hardware' directory to generate gerbers and 
 
 [osphark]: https://www.oshpark.com/
 [dirtypcbs]: https://dirtypcbs.com/store/pcbs/
-[assembly]: docs/assembly.md
+[assembly]: assembly.md
 
 ## Credits
 

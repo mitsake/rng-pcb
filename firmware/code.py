@@ -20,7 +20,7 @@ while True:
     if touch_r.value:
         oled.fill(0)
         oled.show()
-        for row in range(124):
+        for row in range(128):
             for col in range(32):
                 last_digit = noise_in.value % 10
                 if last_digit in [2, 4]:

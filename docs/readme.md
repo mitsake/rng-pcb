@@ -1,6 +1,6 @@
 # CircuitPython Random Number Generator
 
-This is my contribution to the Boldport Club's community run Board Swap Project, a hardware random number generator that uses avalanche noise to make patterns and roll dice.
+This is my contribution to the Boldport Club's community run Board Swap Project, a hardware random number generator that uses avalanche noise to make patterns and roll dice. Please note that I made this for fun - if you need random numbers for anything important, this isn't the project you're looking for.
 
 ## Operation
 
@@ -16,7 +16,7 @@ The display is an inexpensive 128 × 32 SSD1306-based OLED, and the in-built cap
 
 You can use the KiCad files in the 'hardware' directory to generate gerbers and get them made at your favourite PCB fab. I had my prototypes made at [OSH Park][oshpark] (who accept the `.kicad_pcb` file directly), and once I'd finished the final design, got a 'protopack' made at [Dirty PCBs][dirtypcbs]. More detailed assembly instructions can be found [here][assembly].
 
-[osphark]: https://www.oshpark.com/
+[oshpark]: https://www.oshpark.com/
 [dirtypcbs]: https://dirtypcbs.com/store/pcbs/
 [assembly]: assembly.md
 

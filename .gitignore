@@ -23,7 +23,3 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
-
-# Ignore some test files
-analogin*
-randbytes

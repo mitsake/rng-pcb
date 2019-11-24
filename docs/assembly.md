@@ -44,7 +44,7 @@ There are four boards in the design: the bottom board, which will have all the c
 
 ## Populate the bottom board
 
-Once you've had the boards made by your favourite PCB fab, the next job is to solder all the components (except the OLED screen) to the bottom board. My preference is for the following order:
+With the four boards separated, the next job is to solder all the components (except the OLED screen) to the bottom board. My preference is for the following order:
 
 1. Transistors (Q1-3)
 2. Resistors and capacitors
@@ -72,7 +72,7 @@ The microcontroller used in this project is the same as the one used on Adafruit
 
 ## Install CircuitPython
 
-If flashing was successful, resetting the boards should result in a USB mass-storage device called TRINKETBOOT appearing on your computer. It's then a simple matter of downloading the [latest release][CircuytPyDL] of CircuitPython for the Trinket, copying that to the mass storage device, and waiting until a new device called CIRCUITPY appears. You'll also need a copy of the [libraries][] that match the version of CircuitPython installed, and copy `adafruit_bus_device`, `adafruit_framebuf.mpy` and `adafruit_ssd1306.mpy` to the `lib` folder on the drive. In addition, `font5x8.bin` (found in the examples folder) should be copied to the root of the drive.
+If flashing was successful, resetting the boards should result in a USB mass-storage device called TRINKETBOOT appearing on your computer. It's then a simple matter of downloading the [latest release][CircuytPyDL] of CircuitPython for the Trinket, copying that to the mass storage device, and waiting until a new device called CIRCUITPY appears. You'll also need a copy of the [libraries][] that match the version of CircuitPython installed, and copy `adafruit_bus_device` (the whole directory), `adafruit_framebuf.mpy` and `adafruit_ssd1306.mpy` to the `lib` folder on the drive. In addition, `font5x8.bin` (found in the examples folder) should be copied to the root of the drive.
 
 [CircuitPyDL]: https://circuitpython.org/board/trinket_m0/
 [libraries]: https://circuitpython.org/libraries
@@ -97,6 +97,28 @@ Insert the screen into the connector, hold it on an angle to ensure there's an e
 
 ![PCB with screen displaying 'Hello world!'](images/screen.jpg)
 
-## Finish the assembly
+## Build the PCB stack
 
-Now that everything's working,
+Now that everything's working, the boards can be stacked to make the enclosure. Cut the wire into four segments, insert them into the bottom PCB, and solder them from the bottom side:
+
+![Circuit board with a wire sticking up from each corner](images/stack1.jpg)
+
+Thread the spacers onto the wires - make sure they're the right way around! The shorter arm should be located on the same side as the USB connector. You can solder these in place, but use as little as possible so that the top board can sit flush.
+
+![Circuit board with two small boards sitting on top. The boards are held in place with wires](images/stack2.jpg)
+
+Finally, put the top board in place, paying attention to direction. The top of the board has two diagonal lines in the top left and right of the board, which act as the capacitive touch points. Solder in place.
+
+![A stack of three circuit boards. All boards are held in place with wires that stick out of each corner](images/stack3.jpg)
+
+## Attach the screen
+
+The screen fits best if you remove the plastic from the four-pin header. Pliers should do this pretty well, and you can then have the screen sitting on top of the microcontroller. Solder the screen in place.
+
+![A small OLED screen. The four-pin header has had the black plastic spacer removed](images/oled.jpg)
+
+## All done!
+
+In the spirit of the Club, finish all the through-hole joints with beautiful [solder domes][domes], and your random number generator is ready to receive code!
+
+[domes]: https://boldport.com/blog/2014/03/making-beautiful-solder-points.html

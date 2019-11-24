@@ -1,6 +1,8 @@
 # CircuitPython Random Number Generator
 
-This is my contribution to the Boldport Club's community run Board Swap Project, a hardware random number generator that uses avalanche noise to make patterns and roll dice. Please note that I made this for fun - if you need random numbers for anything important, this isn't the project you're looking for.
+This is my contribution to the Boldport Club's community run Board Swap Project, a hardware random number generator that uses avalanche noise to make patterns and roll dice. Apart from being part of the community project, my other motivations were interest in randomness and the processes that can be used to generate it, along with the idea of using PCBs to build an enclosure.
+
+**Please note that I made this for fun - if you need random numbers for anything important, this isn't the project you're looking for.**
 
 ## Operation
 
@@ -14,11 +16,12 @@ The display is an inexpensive 128 × 32 SSD1306-based OLED, and the in-built cap
 
 ## Making your own
 
-You can use the KiCad files in the 'hardware' directory to generate gerbers and get them made at your favourite PCB fab. I had my prototypes made at [OSH Park][oshpark] (who accept the `.kicad_pcb` file directly), and once I'd finished the final design, got a 'protopack' made at [Dirty PCBs][dirtypcbs]. More detailed assembly instructions can be found [here][assembly].
+You can use the KiCad files in the 'hardware' directory to generate gerbers and get them made at your favourite PCB fab. I had my prototypes made at [OSH Park][oshpark] (who accept the `.kicad_pcb` file directly), and once I'd finished the final design, got a 'protopack' made at [Dirty PCBs][dirtypcbs]. The gerbers are available in a [zip file][zip] which should be accepted by most fabs, and assembly instructions can be found [here][assembly].
 
 [oshpark]: https://www.oshpark.com/
 [dirtypcbs]: https://dirtypcbs.com/store/pcbs/
 [assembly]: assembly.md
+[zip]: hardware/gerbers/rng-pcb-dirtypcbs.zip
 
 ## Credits
 

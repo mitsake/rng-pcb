@@ -4,7 +4,10 @@
 
 ### Components
 
+Apart from the parts in the [bill of materials][bom], you'll need to source a screen. The best places to find these are the usual suspects - AliExpress, eBay, or wherever else you find your cheap electronics. I used [this one][screen], though I should have bought one with a black PCB to better fit the final boards! One thing to watch out for are the dimensions; I've noticed that some sellers (e.g. [this one][wrongscreen]) have pictures that show a longer version.
 
+[screen]: https://www.aliexpress.com/item/32672229793.html
+[wrongscreen]: https://www.aliexpress.com/item/32788923016.html
 
 ### Tools etc.
 

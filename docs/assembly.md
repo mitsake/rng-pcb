@@ -4,24 +4,7 @@
 
 ### Components
 
-| Reference       | Quantity | Value          | Footprint          |
-| --------------- | -------- | -------------- | ------------------ |
-| C1, C7          | 2        | 10 μF, 16 V    | 0603               |
-| C2, C3          | 2        | 0.22 μF, 16 V  | 0603               |
-| C4, C5, C8, C10 | 4        | 0.1 μF, 16 V   | 0603               |
-| C6, C9          | 2        | 1 μF, 16 V     | 0603               |
-| J1              | 1        | USB-micro jack | Molex 47642-0001   |
-| J2              | 1        | 128 × 32 OLED  | [Example][aliexp]  |
-| Q1, Q2, Q3      | 3        | MMBT3904T      | SOT523             |
-| R1, R2, R3, R5  | 4        | 4.7 kΩ         | 0603               |
-| R4              | 1        | 1 MΩ           | 0603               |
-| R6              | 1        | 1.5 kΩ         | 0603               |
-| SW1             | 1        | Push switch    | Wurth 434331013822 |
-| U1              | 1        | AP2112K-3.3    | SOT 23-5           |
-| U2              | 1        | ST662A         | SOIC-8             |
-| U3              | 1        | ATSAMD21E18A   | TQFP-32            |
 
-[aliexp]: https://www.aliexpress.com/item/32672229793.html
 
 ### Tools etc.
 

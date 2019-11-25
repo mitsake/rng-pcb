@@ -31,10 +31,9 @@
 - Desoldering braid
 - Flush cutters
 - About 50-80 mm of ~ 0.5 mm diameter wire - leads from through-hole resistors work well
-- A way to flash the microcontroller - I used a [J-Link EDU Mini][jlink], but it's also possible to use OpenOCD on a [Raspberry Pi][piocd].
+- A way to flash the microcontroller - I used a [J-Link EDU Mini][jlink].
 
 [jlink]: https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/
-[piocd]: https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi
 
 ## Separate the boards
 
@@ -63,14 +62,16 @@ Hopefully once you're done, you'll have something that looks like this:
 
 ## Flash the UF2 bootloader
 
-The microcontroller used in this project is the same as the one used on Adafruit's [Trinket M0][trinket], so installing the [UF2 bootloader][bootloader] for that board is the easiest way to get things running. While the right way to do this would be pogo pins, tack soldering is just as effective:
-
-![Picture of J-Link connected to a PCB with wires soldered to SWC and SWD pads](images/flashing.jpg)
+As this project is based on Adafruit's [Trinket M0][trinket], we need to install the [UF2 bootloader][bootloader] for that board. The SWC and SWD pins are routed to the bottom of the board, and tacking some wires to these should be sufficient. If you don't have a J-Link on hand, there are quite a few ways to flash via SWD, such as OpenOCD on a [Raspberry Pi][piocd] or [FTDI FT232H][FT232H] breakout, or [converting][bluetobmp] a cheap STM32 'Blue Pill' to a [Black Magic Probe][bmp].
 
 [trinket]: https://www.adafruit.com/product/3500
 [bootloader]: https://github.com/adafruit/uf2-samdx1
+[piocd]: https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi
+[FT232H]: https://github.com/unprovable/FTDI-Oh-My/blob/master/FT232H-JTAG-SWD.txt
+[bluetobmp]: https://medium.com/@paramaggarwal/converting-an-stm32f103-board-to-a-black-magic-probe-c013cf2cc38c
+[bmp]: https://github.com/blacksphere/blackmagic
 
-## Install CircuitPython
+## Install CircuitPython and required libraries
 
 If flashing was successful, resetting the boards should result in a USB mass-storage device called TRINKETBOOT appearing on your computer. It's then a simple matter of downloading the [latest release][CircuytPyDL] of CircuitPython for the Trinket, copying that to the mass storage device, and waiting until a new device called CIRCUITPY appears. You'll also need a copy of the [libraries][] that match the version of CircuitPython installed, and copy `adafruit_bus_device` (the whole directory), `adafruit_framebuf.mpy` and `adafruit_ssd1306.mpy` to the `lib` folder on the drive. In addition, `font5x8.bin` (found in the examples folder) should be copied to the root of the drive.
 
@@ -95,7 +96,7 @@ oled.show()
 
 Insert the screen into the connector, hold it on an angle to ensure there's an electrical connection, and run the code. Hopefully the screen will greet you.
 
-![PCB with screen displaying 'Hello world!'](images/screen.jpg)
+![Circuit board with screen displaying 'Hello world!'](images/screen.jpg)
 
 ## Build the PCB stack
 
@@ -122,3 +123,5 @@ The screen fits best if you remove the plastic from the four-pin header. Pliers 
 In the spirit of the Club, finish all the through-hole joints with beautiful [solder domes][domes], and your random number generator is ready to receive code!
 
 [domes]: https://boldport.com/blog/2014/03/making-beautiful-solder-points.html
+
+![A small device with a pattern of triangles around the outside. In the centre of the board is a small screen.](images/complete.jpg)

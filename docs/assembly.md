@@ -101,9 +101,11 @@ Finally, put the top board in place, paying attention to direction. The top of t
 
 ## Attach the screen
 
-The screen fits best if you remove the plastic from the four-pin header. Pliers should do this pretty well, and you can then have the screen sitting on top of the microcontroller. Solder the screen in place.
+The screen fits best if you remove the plastic from the four-pin header with pliers.
 
 ![A small OLED screen. The four-pin header has had the black plastic spacer removed](images/oled.jpg)
+
+Doing this lets the screen sit on top of the microcontroller and mostly flush with the top PCB. Once you've got the screen in position, flip the stack of boards over and solder the screen in place.
 
 ## All done!
 
@@ -111,4 +113,4 @@ In the spirit of the Club, finish all the through-hole joints with beautiful [so
 
 [domes]: https://boldport.com/blog/2014/03/making-beautiful-solder-points.html
 
-![A small device with a pattern of triangles around the outside. In the centre of the board is a small screen.](images/complete.jpg)
+![A small device with a pattern of triangles around the outside. In the centre of the board is a small screen displaying static.](images/complete.jpg)

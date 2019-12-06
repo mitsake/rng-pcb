@@ -12,11 +12,13 @@ A ST662 charge pump produces the 12 V required to reverse-bias Q1, which produce
 
 [trinket]: https://www.adafruit.com/product/3500
 
-The display is an inexpensive 128 × 32 SSD1306-based OLED, and the in-built capacitive touch that's on the Trinket M0 hardware is routed to the top left (pin A3) and right (A4) corners of the top PCB to allow for input.
+The display is an inexpensive 128 × 32 SSD1306-based OLED, and the in-built capacitive touch that's on the Trinket M0 hardware is routed to the top left (pin A3) and right (A4) corners of the top PCB to allow for input. If you don't have KiCad, you can use the [PDF schematic][schematic] - it's all pretty simple.
+
+[schematic]: schematic.pdf
 
 ## Making your own
 
-You can use the KiCad files in the 'hardware' directory to generate gerbers and get them made at your favourite PCB fab. I had my prototypes made at [OSH Park][oshpark] (who accept the `.kicad_pcb` file directly), and once I'd finished the final design, got a 'protopack' made at [Dirty PCBs][dirtypcbs]. The gerbers are available in a [zip file][zip] which should be accepted by most fabs, and assembly instructions can be found [here][assembly].
+You can use the KiCad files in the 'hardware' directory to generate gerbers and get them made at your favourite PCB fab. I had my prototypes made at [OSH Park][oshpark] (who accept the `.kicad_pcb` file directly), and once I'd finished the final design, got a 'protopack' made at [Dirty PCBs][dirtypcbs]. The gerbers are available in a [zip file][zip] which should be accepted by most fabs, and assembly instructions can be found [here][assembly]. Make sure the PCB thickness is 1.6 mm - Dirty PCBs default to 1.2 mm, which will cause clearance issues.
 
 [oshpark]: https://www.oshpark.com/
 [dirtypcbs]: https://dirtypcbs.com/store/pcbs/

@@ -29,7 +29,7 @@ You can use the KiCad files in the 'hardware' directory to generate gerbers and 
 
 This project was only possible thanks to the electrical designs, libraries, and articles written by others. Many thanks to the people below whose work was used to build this project, and to the Boldport Club Discord for the inspiration to build something and the help and support they're always happy to provide.
 
-- Adafruit's [Trinket M0 schematic][m0schem], which I shamelessly copied for the microcontroller and its supporting components.
+- Adafruit's [Trinket M0 schematic][m0schem], which I shamelessly copied for the microcontroller and its supporting components. I've also used Adafruit's bootloader (and consequently their USB VID and PID), so this project is strictly a DIY build. Please don't distribute finished versions of this project with the Adafruit bootloader installed.
 - Aaron Logue's [Hardware Random Number Generator][aaronl] started me on the path towards making the project, and gave the basic circuit.
 - Giorgio Vazzana's [amazing writeup][giorgiov] of his experiments with this design, including precise measurements of transistor breakdown voltages, analogue and digital output circuits, and rigorous testing of the output.
 - Walter Anderson's [Google Sites][waltera] page has a lot of really interesting information on entropy, both from this design and others.
